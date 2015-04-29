@@ -2,7 +2,7 @@
 function Employee(name) {
   this.name = name;
   this.say = function() {
-    log.add('I am employee ' + name);
+    return 'I am employee ' + this.name;
   };
 }
 
@@ -17,15 +17,14 @@ function EmployeeFactory() {
 function Vendor(name) {
   this.name = name;
   this.say = function() {
-    log.add('I am vendor ' + name);
-  }
+    return 'I am vendor ' + this.name;
+  };
 }
-
 
 function VendorFactory() {
   this.create = function(name) {
     return new Vendor(name);
-  }
+  };
 }
 
 var log = (function() {
@@ -39,7 +38,7 @@ var log = (function() {
       console.log(log);
       log = '';
     }
-  }
+  };
 })();
 
 function run() {
@@ -49,11 +48,11 @@ function run() {
 
   persons.push(employeeFactory.create('Joan'));
   persons.push(employeeFactory.create('Tim'));
-  persons.push(employeeFactory.create('Gerald'));
-  persons.push(employeeFactory.create('Nicole'));
+  persons.push(vendorFactory.create('Gerald'));
+  persons.push(vendorFactory.create('Nicole'));
 
   for (var i = 0, len = persons.length; i < len; i++) {
-    persons[i].say();
+    log.add(persons[i].say());
   }
 
   log.show();
