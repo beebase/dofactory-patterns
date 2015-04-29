@@ -17,8 +17,8 @@ module.exports = function(config) {
       // 'public/lib/angular/angular.min.js',
       // 'public/lib/angular-route/angular-route.min.js',
       // 'public/lib/angular-mocks/angular-mocks.js',
-      // 'public/app.js',
-       '**/**/*spec.js'
+       'creational/**/*.js',
+       'creational/**/*spec.js'
     ],
 
     // list of files to exclude
