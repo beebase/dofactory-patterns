@@ -54,4 +54,4 @@ describe('abstract factory pattern', function() {
     });
   });
 
-})
+});
