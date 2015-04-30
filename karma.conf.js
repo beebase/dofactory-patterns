@@ -21,7 +21,7 @@ module.exports = function(config) {
     ],
 
     // list of files to exclude
-    exclude: ['node_modules/**/*js'],
+    exclude: ['**/**/*-copy.js'],
 
     // preprocess matching files before serving them to the browser
     // available preprocessors:
