@@ -13,6 +13,6 @@ describe('Builder Pattern', function() {
   });
 
   it('car.say()', function() {
-    expect(car.say()).toBe('dfdf');
+    expect(car.say()).toBe('hello');
   });
 });
