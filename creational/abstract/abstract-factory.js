@@ -7,11 +7,13 @@ function Employee(name) {
 }
 
 // concrete factory
+
 function EmployeeFactory() {
   this.create = function(name) {
     return new Employee(name);
   };
 }
+
 
 // product
 function Vendor(name) {
