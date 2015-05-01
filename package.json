@@ -21,15 +21,34 @@
     "express": "^4.12.3"
   },
   "devDependencies": {
+    "beeper": "^1.0.0",
+    "browser-sync": "^2.6.9",
+    "browserify": "^9.0.8",
+    "chromedriver": "^2.15.0",
+    "connect": "^3.3.5",
+    "del": "^1.1.1",
+    "gulp": "^3.8.11",
+    "gulp-concat": "^2.5.2",
+    "gulp-git": "^1.2.1",
+    "gulp-imagemin": "^2.2.1",
+    "gulp-jshint": "^1.10.0",
+    "gulp-karma": "0.0.4",
+    "gulp-myth": "^1.0.2",
+    "gulp-plumber": "^1.0.0",
+    "gulp-uglify": "^1.2.0",
+    "image-min": "^0.3.2",
     "jasmine": "^2.2.1",
     "jasmine-spec-reporter": "^1.1.2",
     "karma": "^0.12.31",
-    "karma-chrome-launcher": "^0.1.7",
+    "karma-chrome-launcher": "^0.1.8",
     "karma-jasmine": "^0.3.5",
     "karma-phantomjs-launcher": "^0.1.4",
     "morgan": "^1.5.2",
     "nodemon": "^1.3.7",
-    "protractor": "^2.0.0"
+    "phantomjs": "^1.9.16",
+    "protractor": "^2.0.0",
+    "serve-static": "^1.9.2",
+    "vinyl-source-stream": "^1.1.0"
   },
   "jshintConfig": {
     "maxerr": 50,
@@ -123,7 +142,7 @@
       "require": false,
       "$": false
     }
-  }   ,
+  },
   "jscsConfig": {
     "requireCurlyBraces": [
       "if",
@@ -143,14 +162,14 @@
     },
     "validateIndentation": 2,
     "validateQuoteMarks": "'",
-
     "disallowMultipleLineStrings": true,
     "disallowMixedSpacesAndTabs": true,
     "disallowTrailingWhitespace": true,
     "disallowSpaceAfterPrefixUnaryOperators": true,
     "disallowMultipleVarDecl": true,
-    "disallowKeywordsOnNewLine": ["else"],
-
+    "disallowKeywordsOnNewLine": [
+      "else"
+    ],
     "requireSpaceAfterKeywords": [
       "if",
       "else",
@@ -163,12 +182,40 @@
       "catch"
     ],
     "requireSpaceBeforeBinaryOperators": [
-      "=", "+=", "-=", "*=", "/=", "%=", "<<=", ">>=", ">>>=",
-      "&=", "|=", "^=", "+=",
-
-      "+", "-", "*", "/", "%", "<<", ">>", ">>>", "&",
-      "|", "^", "&&", "||", "===", "==", ">=",
-      "<=", "<", ">", "!=", "!=="
+      "=",
+      "+=",
+      "-=",
+      "*=",
+      "/=",
+      "%=",
+      "<<=",
+      ">>=",
+      ">>>=",
+      "&=",
+      "|=",
+      "^=",
+      "+=",
+      "+",
+      "-",
+      "*",
+      "/",
+      "%",
+      "<<",
+      ">>",
+      ">>>",
+      "&",
+      "|",
+      "^",
+      "&&",
+      "||",
+      "===",
+      "==",
+      ">=",
+      "<=",
+      "<",
+      ">",
+      "!=",
+      "!=="
     ],
     "requireSpaceAfterBinaryOperators": true,
     "requireSpacesInConditionalExpression": true,
@@ -184,10 +231,7 @@
     "disallowSpacesInsideObjectBrackets": "all",
     "disallowSpacesInsideArrayBrackets": "all",
     "disallowSpacesInsideParentheses": true,
-
     "disallowMultipleLineBreaks": true,
     "disallowNewlineBeforeBlockStatements": true
   }
 }
-
-

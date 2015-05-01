@@ -17,12 +17,11 @@ module.exports = function(config) {
       // 'public/lib/angular/angular.min.js',
       // 'public/lib/angular-route/angular-route.min.js',
       // 'public/lib/angular-mocks/angular-mocks.js',
-      // 'public/app.js',
-       '/**/*Spec.js'
+       'creational/**/*.js'
     ],
 
     // list of files to exclude
-    exclude: [],
+    exclude: ['**/**/*-copy.js'],
 
     // preprocess matching files before serving them to the browser
     // available preprocessors:
