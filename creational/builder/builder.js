@@ -5,7 +5,6 @@ function Shop() {
     return builder.get();
   }
 }
-
 function CarBuilder() {
   this.car = null;
   this.step1 = function() {
@@ -23,9 +22,9 @@ function Car() {
   this.doors = 0;
   this.addParts = function() {
     this.doors = 4;
-    this.say = function() {
-      return 'I am a ' + this.doors + '-door car.';
-    }
+  }
+  this.say = function() {
+    return 'I am a 4-door car.';
   }
 }
 
@@ -33,13 +32,14 @@ function TruckBuilder() {
   this.truck = null;
   this.step1 = function() {
     this.truck = new Truck();
-  };
+  }
   this.step2 = function() {
     this.truck.addParts();
-  };
+  }
   this.get = function() {
     return this.truck;
   }
+
 }
 function Truck() {
   this.doors = 0;
@@ -47,7 +47,6 @@ function Truck() {
     this.doors = 2;
   };
   this.say = function() {
-    return 'I am a ' + this.doors + '-door truck.';
+    return 'I am a ' + this.doors + '-door truck.'
   }
-
 }
