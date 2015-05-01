@@ -1,12 +1,12 @@
 // creator
-function Factory() {
+function EmployeeFactory() {
   this.createEmployee = function(type) {
     var employee;
     if (type === 'fulltime') {
       employee = new FullTime();
-    } else if (type === 'parttime') {
-      employee = new Temporary();
     } else if (type === 'temporary') {
+      employee = new Temporary();
+    } else if (type === 'parttime') {
       employee = new PartTime();
     } else if (type === 'contractor') {
       employee = new Contractor();
@@ -53,12 +53,12 @@ var log = (function() {
 
 function run() {
   var employees = [];
-  var factory = new Factory();
+  var employeeFactory = new EmployeeFactory();
 
-  employees.push(factory.createEmployee('fulltime'));
-  employees.push(factory.createEmployee('parttime'));
-  employees.push(factory.createEmployee('temporary'));
-  employees.push(factory.createEmployee('contractor'));
+  employees.push(employeeFactory.createEmployee('fulltime'));
+  employees.push(employeeFactory.createEmployee('parttime'));
+  employees.push(employeeFactory.createEmployee('temporary'));
+  employees.push(employeeFactory.createEmployee('contractor'));
 
   for (var i = 0, len = employees.length; i < len; i++) {
     employees[i].say();
