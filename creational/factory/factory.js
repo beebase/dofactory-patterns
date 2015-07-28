@@ -13,8 +13,12 @@ function EmployeeFactory() {
        break;
      case 'contractor' :
        employee = new Contractor();
-
    }
+   employee.type = type;
+   employee.say = function() {
+     return employee.type + ': rate ' + employee.hourly + '/hour';
+   };
+   return employee;
  }
 }
 

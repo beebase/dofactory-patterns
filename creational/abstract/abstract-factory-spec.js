@@ -27,7 +27,7 @@ describe('abstract factory pattern', function() {
     });
   });
 
-  describe('EmployeeFsactory', function() {
+  describe('EmployeesFactory', function() {
     var employeeFactory;
     var employee;
     beforeEach(function() {
